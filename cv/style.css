@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Archivo Narrow', sans-serif;
+}
+
+body {
+  background-color: #d6d6d6;
+}
+
+.wrapper {
+  width: 55%;
+  margin: 0 auto;
+}
+
+.wrapper .cv .rightside .achviements {
+  width: 93%;
+  margin: 0 auto;
+}
+
+.wrapper {
+  height: 100vh;
+}
+.wrapper .cv {
+  box-shadow: 0px 0px 5px 5px #b3b3b3;
+  display: grid;
+  grid-template-columns: 45% 55%;
+}
+.wrapper .cv .leftside {
+  background: #141313;
+}
+.wrapper .cv .leftside .profile {
+  padding: 35px 27px 0;
+  height: 450px;
+  background-color: #dfaf12;
+  clip-path: polygon(20% 0%, 0 0, 0 57%, 0 86%, 20% 100%, 50% 92%, 80% 100%, 100% 86%, 100% 49%, 100% 0, 80% 0%, 45% 0);
+}
+.wrapper .cv .leftside .profile .profileImage {
+  width: 220px;
+  height: 230px;
+  outline: 3px solid black;
+}
+.wrapper .cv .leftside .profile .profileImage img {
+  padding: 7px;
+  width: 100%;
+  height: 100%;
+}
+.wrapper .cv .leftside .profile h1 {
+  font-size: 36px;
+  width: 50px;
+}
+.wrapper .cv .leftside .profile h2 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.wrapper .cv .leftside .information {
+  padding: 15px 27px;
+  background-color: #141313;
+  color: #e0dfdf;
+}
+.wrapper .cv .leftside .information h1 {
+  text-align: center;
+  padding-top: 30px;
+  border-bottom: 2px solid #dfaf12;
+}
+.wrapper .cv .leftside .information .grid-information {
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+.wrapper .cv .leftside .information .grid-information ul li {
+  line-height: 30px;
+  font-size: 17px;
+}
+.wrapper .cv .leftside .information .grid-information ul li i {
+  width: 30px;
+  font-size: 25px;
+  margin-right: 15px;
+}
+.wrapper .cv .leftside .information .grid-information ul li span {
+  margin-right: 85px;
+  color: #dfaf12;
+  float: right;
+}
+.wrapper .cv .rightside {
+  background: #eeeeee;
+  height: auto;
+}
+.wrapper .cv .rightside .achviements h1 {
+  padding-top: 30px;
+  border-bottom: 2px solid #dfaf12;
+}
+.wrapper .cv .rightside .achviements .grid-achviements-career-language {
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.wrapper .cv .rightside .achviements .grid-achviements-career-language ul.career-ability li {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: bold;
+}
+.wrapper .cv .rightside .achviements .grid-achviements-career-language .achviements-skills {
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  height: 11px;
+  width: 85%;
+  margin-bottom: 13px;
+  font-size: 10px;
+  border: 1px solid #535353;
+  padding: 6px 0;
+}
+.wrapper .cv .rightside .achviements .grid-achviements-career-language .achviements-skills .skills {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #dfaf12;
+}
+.wrapper .cv .rightside .achviements .grid-achviements-career-language .achviements-skills:nth-child(1) {
+  margin-top: 4px;
+}
+.wrapper .cv .rightside .achviements .grid-achviements-education {
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+.wrapper .cv .rightside .achviements .grid-achviements-education ul:nth-child(1) li {
+  font-size: 20px;
+  font-weight: bold;
+}
+.wrapper .cv .rightside .achviements .grid-achviements-education ul:nth-child(1) span {
+  font-weight: bold;
+  color: #525252;
+}
+.wrapper .cv .rightside .achviements .grid-achviements-education ul:nth-child(1) span i {
+  margin: 0 10px 7px;
+  color: #dfaf12;
+}
+.wrapper .cv .rightside .achviements .grid-achviements-education ul:nth-child(2) li {
+  line-height: 50px;
+  font-weight: bold;
+}
+.wrapper .cv .rightside .achviements .grid-achviements-technical {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  margin-top: 35px;
+}
+.wrapper .cv .rightside .achviements .grid-achviements-technical ul {
+  margin: 0 auto;
+}
+.wrapper .cv .rightside .achviements .grid-achviements-technical ul li {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: bold;
+}
+.wrapper .cv .rightside .achviements .grid-achviements-technical ul li i {
+  font-size: 13px;
+  margin-right: 8px;
+  color: #dfaf12;
+}
+.wrapper .cv .rightside .achviements .grid-achviements-reference {
+  margin-top: 35px;
+}
+.wrapper .cv .rightside .achviements .grid-achviements-reference ul {
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+.wrapper .cv .rightside .achviements .grid-achviements-reference ul li {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.wrapper .cv .rightside .achviements .grid-achviements-reference ul li img {
+  width: 120px;
+  height: 30px;
+}
+.wrapper .cv .rightside .achviements .grid-achviements-reference ul li:nth-child(2) {
+  padding: 10px 0 0 200px;
+}
+.wrapper .cv .rightside .achviements .grid-achviements-reference ul li:nth-child(2) i {
+  font-size: 25px;
+  margin-right: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */

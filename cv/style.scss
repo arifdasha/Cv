@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+body {
+    background-color: rgb(214, 214, 214);
+}
+
+%wrapper {
+    width: 55%;
+    margin: 0 auto;
+}
+
+%container {
+    width: 93%;
+    margin: 0 auto;
+}
+
+.wrapper {
+    @extend %wrapper;
+    height: 100vh;
+
+    .cv {
+        box-shadow: 0px 0px 5px 5px rgb(179, 179, 179);
+        display: grid;
+        grid-template-columns: 45% 55%;
+
+        .leftside {
+            background: rgb(20, 19, 19);
+
+            .profile {
+                padding: 35px 27px 0;
+                height: 450px;
+                background-color: rgb(223, 175, 18);
+
+                clip-path: polygon(20% 0%, 0 0, 0 57%, 0 86%, 20% 100%, 50% 92%, 80% 100%, 100% 86%, 100% 49%, 100% 0, 80% 0%, 45% 0);
+
+                .profileImage {
+                    width: 220px;
+                    height: 230px;
+                    outline: 3px solid black;
+
+                    img {
+                        padding: 7px;
+
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                h1 {
+                    font-size: 36px;
+                    width: 50px;
+                }
+
+                h2 {
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                }
+            }
+
+            .information {
+                padding: 15px 27px;
+                background-color: rgb(20, 19, 19);
+                color: rgb(224, 223, 223);
+
+                h1 {
+                    text-align: center;
+                    padding-top: 30px;
+                    border-bottom: 2px solid rgb(223, 175, 18);
+                }
+
+                .grid-information {
+                    margin-top: 35px;
+                    display: grid;
+                    grid-template-columns: 70% 30%;
+
+                    ul {
+                        li {
+                            line-height: 30px;
+                            font-size: 17px;
+
+                            i {
+                                width: 30px;
+                                font-size: 25px;
+                                // padding-top:5px;
+                                margin-right: 15px;
+                            }
+
+                            span {
+                                margin-right: 85px;
+                                color: rgb(223, 175, 18);
+                                float: right;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .rightside {
+            background: rgb(238, 238, 238);
+            height: auto;
+
+            .achviements {
+                @extend %container;
+
+                h1 {
+                    padding-top: 30px;
+                    border-bottom: 2px solid rgb(223, 175, 18);
+                }
+
+                .grid-achviements-career-language {
+                    margin-top: 35px;
+                    display: grid;
+                    grid-template-columns: 50% 50%;
+
+                    ul.career-ability {
+                        li {
+                            font-size: 16px;
+                            line-height: 25px;
+                            font-weight: bold;
+                        }
+                    }
+
+                    .achviements-skills {
+                        position: relative;
+                        text-align: center;
+                        font-weight: bold;
+                        height: 11px;
+                        width: 85%;
+                        margin-bottom: 13px;
+                        font-size: 10px;
+                        border: 1px solid rgb(83, 83, 83);
+                        padding: 6px 0;
+
+                        .skills {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 0;
+                            height: 100%;
+                            background-color: rgb(223, 175, 18);
+                        }
+
+                        &:nth-child(1) {
+                            margin-top: 4px;
+                        }
+                    }
+                }
+
+                .grid-achviements-education {
+                    margin-top: 35px;
+                    display: grid;
+                    grid-template-columns: 80% 20%;
+
+                    ul:nth-child(1) {
+                        li {
+                            font-size: 20px;
+                            font-weight: bold;
+                        }
+
+                        span {
+                            font-weight: bold;
+                            color: rgb(82, 82, 82);
+
+                            i {
+                                margin: 0 10px 7px;
+                                color: rgb(223, 175, 18)
+                            }
+                        }
+                    }
+
+                    ul:nth-child(2) {
+                        li {
+                            line-height: 50px;
+                            font-weight: bold;
+                        }
+                    }
+                }
+
+                .grid-achviements-technical {
+                    display: grid;
+                    grid-template-columns: 45% 55%;
+                    margin-top: 35px;
+
+                    ul {
+                        margin: 0 auto;
+
+                        li {
+                            font-size: 16px;
+                            line-height: 25px;
+                            font-weight: bold;
+
+                            i {
+                                font-size: 13px;
+                                margin-right: 8px;
+                                color: rgb(223, 175, 18);
+                            }
+                        }
+                    }
+                }
+
+                .grid-achviements-reference {
+                    margin-top: 35px;
+
+                    ul {
+                        display: grid;
+                        grid-template-columns: 25% 75%;
+
+                        li {
+                            font-size: 16px;
+                            line-height: 25px;
+                            font-weight: bold;
+                            padding-bottom: 20px;
+
+                            img {
+                                width: 120px;
+                                height: 30px;
+                            }
+                        }
+
+                        li:nth-child(2) {
+                            padding: 10px 0 0 200px;
+
+                            i {
+                                font-size: 25px;
+                                margin-right: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
